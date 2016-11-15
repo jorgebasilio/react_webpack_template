@@ -1,18 +1,6 @@
 import React, { Component } from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 // Components
-import SearchButton from './components/search_bar/SearchButton';
-import SearchInput from './components/search_bar/SearchInput';
+import App from './components/App';
 
-class App extends Component {
-  render() {
-    return(
-      <form>
-        <SearchInput />
-        <SearchButton />
-      </form>
-    );
-  }
-}
-
-render(<App />, document.getElementById('app'))
+render(<App />, document.getElementById('app'));
