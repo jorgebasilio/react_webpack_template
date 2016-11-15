@@ -5,7 +5,7 @@ class ItemList extends Component {
   render() {
     let items = this.props.musicList.map((value, index) => {
       return <Item key={index} title={value.title} />
-    })
+    });
     return <div> { items } </div>
   }
 }
