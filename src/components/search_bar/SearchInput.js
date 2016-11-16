@@ -12,6 +12,6 @@ export default class SearchInput extends Component {
   }
 
   render() {
-    return(<input type='text' onChange={this._onChange}/>);
+    return(<input className='input-search' type='text' onChange={this._onChange}/>);
   }
 }

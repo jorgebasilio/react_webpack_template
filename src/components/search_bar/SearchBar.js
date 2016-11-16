@@ -15,7 +15,7 @@ class SearchBar extends Component {
   }
 
   handleSearchButton() {
-    console.log(this.state.text);
+    this.props.search(this.state.text);
   }
 
   handleSearchInput(text) {
@@ -24,7 +24,7 @@ class SearchBar extends Component {
 
   render() {
     return(
-      <div>
+      <div className='search-bar-container'>
         <Form>
           <SearchInput onChange={this.handleSearchInput} />
           <SearchButton onClick={this.handleSearchButton} />

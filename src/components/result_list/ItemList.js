@@ -1,12 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Item from './Item';
 
 class ItemList extends Component {
+
+  filterItems(key) {
+    return this.props.musicList.filter((item) => {
+      let text = key.toLowerCase();
+      return item.title.toLowerCase().match(text);
+    });
+  }
+
   render() {
-    let items = this.props.musicList.map((value, index) => {
+    let items = this.filterItems(this.props.text).map((value, index) => {
       return <Item key={index} title={value.title} />
     });
-    return <div> { items } </div>
+    return <div className='result-list' > { items } </div>
   }
 }
 
@@ -17,6 +25,6 @@ ItemList.defaultProps = {
     { title: 'Dont let me down' },
     { title: 'Heathens' }
   ]
-}
+};
 
 export default ItemList;

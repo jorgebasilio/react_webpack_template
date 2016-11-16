@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background-color: #272a3b;
+}
+
+.song-finder {
+  width: 30%;
+  background-color: #2f3243;
+  color: #fefefe;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  box-shadow: 0 20px 90px black;
+}
+
+.search-bar-container{
+  margin: 30px auto;
+  text-align: center;
+}
+
+.input-search {
+  padding: 10px;
+  width: 60%;
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: 400;
+  color: #212121;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+
+.button-search{
+  padding: 17px;
+  border-width: 0;
+  border-style: none;
+  border-color: #03A9F4;
+  border-image: none;
+  align-items: baseline;
+  text-align: center;
+  cursor: pointer;
+  color: #b6e8ff;
+  background-color: #394275;
+  box-sizing: border-box;
+  margin: 5px;
+  vertical-align: baseline;
+}
+
+.result-list{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item-container{
+  background: #383b4e;
+  padding: 10px;
+  margin: 3px auto;
+}
+.item-container:hover{
+  background: #3c405a;
+  box-shadow: 0 0 25px #1f1f1f;
+}
+
+.add-button-list-search {
+  border-radius: 83px;
+  border: none;
+  background-color: #03A9F4;
+  color: #fbfbfb;
+  font-size: 34px;
+  padding: 5px 15px;
+  display: inline-block;
+  float: right;
+  margin-top: -54px;
+  margin-right: -36px;
+  transition: 0.2s;
+}
+.add-button-list-search:hover{
+  background-color: #43c5ff;
+  box-shadow: 0 0 20px #007bb3;
+  font-size: 36px;
+  cursor: pointer;
+}
+.add-button-list-search:focus{
+  background-color: #43c5ff;
+  outline: none;
+}
+
+.text-list-search {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.player-section {
+  width: 70%;
+  float: right;
+}
+
+.music-item {
+  width: 70%;
+  padding: 3px 30px;
+  margin: 7px auto;
+  background-color: #393e52;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+  transition: 0.2s;
+}
+
+.music-item:hover {
+  cursor: pointer;
+  margin: 7px auto;
+  background-color: #3b415a;
+  box-shadow: 0 0 20px #191818;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.play-button-playlist{
+  border: none;
+  background-color: #03A9F4;
+  color: #fbfbfb;
+  font-size: 15px;
+  padding: 5px 15px;
+  display: inline-block;
+  float: right;
+  margin-top: -43px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+.delete-button-playlist{
+  border: none;
+  background-color: #586c8c;
+  color: #fbfbfb;
+  font-size: 14px;
+  padding: 5px 9px;
+  display: inline-block;
+  float: right;
+  margin-top: -44px;
+  margin-right: 39px;
+  border-radius: 50%;
+  font-family: cursive;
+  cursor: pointer;
+}

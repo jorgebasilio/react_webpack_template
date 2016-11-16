@@ -12,6 +12,6 @@ export default class SearchButtom extends Component {
   }
 
   render() {
-    return(<button onClick={this._onClick}>Buscar</button>);
+    return(<button className='button-search' onClick={this._onClick}>Buscar</button>);
   }
 }
