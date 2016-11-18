@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import YTSearch from 'youtube-api-search';
 // Components
 import SearchButton from './SearchButton';
 import SearchInput from './SearchInput';
@@ -8,7 +9,8 @@ class SearchBar extends Component {
   constructor() {
     super();
     this.state = {
-      text: ''
+      text: '',
+      videos: []
     };
     this.handleSearchInput = this.handleSearchInput.bind(this);
     this.handleSearchButton = this.handleSearchButton.bind(this);

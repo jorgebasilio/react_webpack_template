@@ -3,6 +3,15 @@ body {
   background-color: #272a3b;
 }
 
+h5 {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  width: 75%;
+}
+
 .song-finder {
   width: 30%;
   background-color: #2f3243;
@@ -16,6 +25,7 @@ body {
 .search-bar-container{
   margin: 30px auto;
   text-align: center;
+  height: 10%;
 }
 
 .input-search {
@@ -46,8 +56,12 @@ body {
 }
 
 .result-list{
-  width: 80%;
-  margin: 0 auto;
+  width: 88%;
+  padding: 20px 42px 0 0;
+  margin: 4px;
+  overflow-y: auto;
+  height: 75%;
+  overflow-x: hidden;
 }
 
 .item-container{
